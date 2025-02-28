@@ -1,4 +1,6 @@
 import { SVGProps } from "react";
+import Homepage from "@/pages/homepage";
+import Musicstreaming from "@/pages/music-streaming";
 
 type SafariMode = "default" | "simple";
 
@@ -21,6 +23,7 @@ export function Safari({
   ...props
 }: SafariProps) {
   return (
+    <div className=" flex justify-center size-11/12">
     <svg
       width={width}
       height={height}
@@ -32,8 +35,11 @@ export function Safari({
       <g clipPath="url(#path0)">
         <path
           d="M0 52H1202V741C1202 747.627 1196.63 753 1190 753H12C5.37258 753 0 747.627 0 741V52Z"
-          className="fill-[#E5E5E5] dark:fill-[#A8A6FF]"
+          className="fill-[#E5E5E5] dark:fill-[#ADFACE]"
+          
+
         />
+        
         <path
           fillRule="evenodd"
           clipRule="evenodd"
@@ -179,6 +185,12 @@ export function Safari({
           />
         </clipPath>
       </defs>
+      
     </svg>
+    {<Homepage/>}
+    {/*<Musicstreaming/>*/}
+    </div>
+    
+    
   );
 }
