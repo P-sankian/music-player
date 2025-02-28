@@ -12,14 +12,27 @@ export default function Searchbar() {
               className="w-[25px] h-[25px]"
             >
               <path d="M0 0h24v24H0z" fill="none" />
-              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+              <svg
+  width={24}
+  height={24}
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  strokeWidth="2"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+  className="feather feather-search"
+>
+  <circle cx="11" cy="11" r="8" />
+  <path d="M21 21L16.65 16.65" />
+</svg>
             </svg>
           </button>
           <input
             type="text"
-            name="username"
+            name="search"
             className="w-full outline-none border-3 border-black p-[15px] text-lg bg-white text-black transform-gpu translate-z-[10px] transition-all duration-400 ease-[cubic-bezier(0.23,1,0.32,1)] relative z-[3] font-['Roboto',Arial,sans-serif] tracking-[-0.5px] placeholder:text-[#666] placeholder:font-bold placeholder:uppercase hover:bg-[#f0f0f0] hover:translate-z-[20px] hover:-translate-x-[5px] hover:-translate-y-[5px] hover:shadow-[5px_5px_0_0_#000] focus:bg-[#f0f0f0] focus:translate-z-[20px] focus:-translate-x-[5px] focus:-translate-y-[5px] focus:shadow-[5px_5px_0_0_#000]"
-            placeholder="Enter username"
+            placeholder="search your song"
           />
         </div>
       </>
